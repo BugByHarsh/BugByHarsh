@@ -162,7 +162,7 @@ Open to  : Freelance & Collabs
 
 <div align="center">
 
-![snake gif](https://github.com/BugByHarsh/BugByHarsh/blob/output/github-contribution-grid-snake-dark.svg)
+![snake gif](https://github.com/BugByHarsh/BugByHarsh/blob/output/snake.svg)
 
 </div>
 
