@@ -36,9 +36,6 @@ jobs:
           git checkout --orphan output
           git reset --hard
 
-          # Remove only tracked files (safe)
-          git rm -rf . || true
-
           # Copy generated file
           cp dist/snake.svg snake.svg
 
