@@ -6,7 +6,7 @@
 
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&pause=1000&color=00FFF0&center=true&vCenter=true&random=false&width=600&lines=Hey+there!+I'm+Harsh+%F0%9F%91%8B;Full+Stack+Web+Developer;React+%7C+Node.js+%7C+MongoDB+%7C+Socket.io;Building+crypto+products+%40+Ezzstar+%F0%9F%9A%80;Always+creating+bugs...+and+fixing+them!" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&pause=1000&color=00FFF0&center=true&vCenter=true&random=false&width=600&lines=Hey+there!+I'm+Harsh+%F0%9F%91%8B;Full+Stack+Web+Developer;React+%7C+Node.js+%7C+MongoDB+%7C+Socket.io;Freelancing+%40+Ezzstar+%F0%9F%9A%80;Always+creating+bugs...+and+fixing+them!" alt="Typing SVG" />
   </a>
 </div>
 
@@ -25,19 +25,23 @@
 
 ## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28"> About Me
 
+<img align="right" width="340" src="https://camo.githubusercontent.com/5046cb083418fd1922b7f5990e594c3bb06f5d87e5516cd8839ae0aa48b3aec4/68747470733a2f2f696d616765732e73717561726573706163652d63646e2e636f6d2f636f6e74656e742f76312f3537363966633430316236333162616231616464623261622f313534313538303462323232373939326630613835623630396639303535363161393535333064312f535f476f6f676c65446f6f646c655f576f6d656e5f32303138303038382e676966"/>
+
 ```javascript
 const harsh = {
   name:       "Harsh Upadhyay",
+  alias:      "BugByHarsh",
   role:       "Full Stack Developer",
-  company:    "Ezzstar",
-  building:   "Crypto trading platform 🚀",
+  freelance:  "Ezzstar — Crypto x Manga Platform",
+  building:   "Where readers & creators earn crypto 📖💰",
   learning:   ["React Native", "Web3", "Blockchain"],
   stack:      ["React", "Node.js", "MongoDB", "Socket.io", "Tailwind"],
   funFact:    "I don't create bugs, I create unexpected features 🐛",
   askMeAbout: ["React", "Node.js", "REST APIs", "Real-time apps"],
-  contact:    "BugByHarsh@github.com",
 };
 ```
+
+<br clear="right"/>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
@@ -49,16 +53,21 @@ const harsh = {
 <table>
   <tr>
     <td width="50%" align="center">
-      <h3>💹 Crypto Platform @ Ezzstar</h3>
-      <p>Building a full-stack crypto trading and analytics platform with real-time market data, wallet integrations, and live charts.</p>
+      <h3>📖 Manga & Stories on Crypto @ Ezzstar</h3>
+      <p>
+        A freelance crypto platform where creators publish manga and stories and <strong>get paid in crypto</strong> for their work. Readers discover content, support creators directly, and earn rewards — all on-chain.
+      </p>
       <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
       <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
       <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"/>
       <img src="https://img.shields.io/badge/Web3.js-F16822?style=for-the-badge&logo=web3dotjs&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Crypto-F7931A?style=for-the-badge&logo=bitcoin&logoColor=white"/>
     </td>
     <td width="50%" align="center">
-      <h3>💬 Convo — Chat App</h3>
-      <p>Real-time chat app with Socket.io, JWT auth, Google OAuth, virtual scrolling, and paginated message history.</p>
+      <h3>💬 Convo — Real-time Chat App</h3>
+      <p>
+        Full-stack chat app with Socket.io, JWT auth, Google OAuth, virtual scrolling, and paginated message history.
+      </p>
       <img src="https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socketdotio&logoColor=white"/>
       <img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"/>
       <img src="https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
