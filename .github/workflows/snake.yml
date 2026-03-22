@@ -1,1 +1,49 @@
 
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate snake SVG
+        uses: Platane/snk@v3
+        with:
+          github_user_name: BugByHarsh
+          outputs: dist/snake.svg
+
+      - name: Deploy to output branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Create a clean orphan branch
+          git checkout --orphan output
+          git reset --hard
+
+          # Remove tracked files safely
+          git rm -rf . || true
+
+          # Copy generated file
+          cp dist/snake.svg snake.svg
+
+          git add snake.svg
+          git commit -m "update snake" || echo "No changes"
+
+          git push origin output --force
