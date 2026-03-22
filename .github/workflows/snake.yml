@@ -2,14 +2,14 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *"   # runs daily
   workflow_dispatch:
 
 permissions:
   contents: write
 
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # fixes warning
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   generate:
@@ -19,7 +19,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # IMPORTANT (fixes git issues)
+          fetch-depth: 0
 
       - name: Generate snake
         uses: Platane/snk@v3
@@ -32,14 +32,17 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Create a clean orphan branch every time (simplest + no conflicts)
+          # Create fresh branch
           git checkout --orphan output
           git reset --hard
+
+          # Remove only tracked files (safe)
+          git rm -rf . || true
 
           # Copy generated file
           cp dist/snake.svg snake.svg
 
           git add snake.svg
-          git commit -m "update snake"
+          git commit -m "update snake" || echo "No changes"
 
           git push origin output --force
