@@ -153,22 +153,6 @@ Open to  : Freelance & Collabs
 
 <br/>
 
-## 🏆 GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=BugByHarsh&theme=radical&no-frame=true&no-bg=true&margin-w=6&row=1&column=7" />
-</div>
-
-<br/>
-
-<picture>
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:ff00aa,100:00fff0&height=3&section=header" width="100%"/>
-</picture>
-
-<br/>
-
-<div align="center">
-
 ### 💬 Dev Quote of the Day
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
