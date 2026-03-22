@@ -1,32 +1,49 @@
-name: Deploy
+name: Generate Snake
 
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: "0 0 * * *"   # runs daily
+  workflow_dispatch:
 
 permissions:
   contents: write
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
-  deploy:
+  generate:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Install
-        run: npm install
-
-      - name: Build
-        run: npm run build
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Generate snake
+        uses: Platane/snk@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          github_user_name: BugByHarsh
+          outputs: |
+            dist/github-contribution-grid-snake-dark.svg
+
+      - name: Push to output branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git fetch origin
+
+          # Check if output branch exists
+          if git show-ref --verify --quiet refs/remotes/origin/output; then
+            git checkout output
+          else
+            git checkout --orphan output
+          fi
+
+          # Clean branch
+          rm -rf *
+
+          # Copy generated file
+          cp dist/github-contribution-grid-snake-dark.svg .
+
+          git add github-contribution-grid-snake-dark.svg
+          git commit -m "update snake" || echo "No changes"
+
+          git push origin output --force
