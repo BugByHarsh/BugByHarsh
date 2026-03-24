@@ -15,7 +15,7 @@
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=BugByHarsh&style=for-the-badge&color=blueviolet&label=PROFILE+VIEWS" />
   &nbsp;
-  <img src="https://img.shields.io/github/followers/BugByHarsh?style=for-the-badge&color=ff00aa&labelColor=0d0d2b&label=FOLLOWERS" />
+<img src="https://img.shields.io/github/followers/BugByHarsh?style=for-the-badge&color=ff00aa&labelColor=0d0d2b&label=FOLLOWERS&cache_seconds=0" />
   &nbsp;
   <img src="https://img.shields.io/badge/Freelancer-Available-00fff0?style=for-the-badge&logo=freelancer&logoColor=white" />
 </div>
